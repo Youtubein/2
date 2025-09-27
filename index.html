@@ -169,7 +169,70 @@ h1 {
 <body>
 <div id="settings-toggle">⚙️ Settings</div>
 <div class="card" id="timer-card">
-  <h1 id="timer-title">Countdown Timer</h1>
+  <h1 id="timer-title">Countdown Timer </h1>
+  <h2 class="styled-text"><span class="rlspabf">R.L.S.P.A.B.F</span> <span class="lucky">Luckye</span></h2>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Styled Text</title>
+  <style>
+    .card {
+      text-align: center; /* Center the content for better presentation */
+    }
+
+    #settings-toggle {
+      position: absolute;
+      top: 10px;
+      right: 10px;
+      cursor: pointer;
+      font-size: 1.2em;
+    }
+
+    h2.styled-text {
+      font-family: "French Script MT", cursive; /* Default cursive font for h2 */
+      font-weight: bold; /* Bold text */
+      font-size: 2.5em; /* Base font size */
+      animation: colorChange 5s infinite linear; /* Color animation */
+      display: inline-block; /* Ensure gradient applies correctly */
+    }
+
+    /* Font for R.L.S.P.A.B.F */
+    h2.styled-text .rlspabf {
+      font-family: "Algerian", serif; /* Algerian font for R.L.S.P.A.B.F */
+    }
+
+    /* Smaller font size for Luckye */
+    h2.styled-text .lucky {
+      font-size: 0.7em; /* Smaller size for Luckye */
+      font-family: "French Script MT", cursive; /* Retain original font for Luckye */
+    }
+
+    @keyframes colorChange {
+      0% {
+        background: linear-gradient(90deg, #ff4b5c, #56cfe1, #ff9f1c, #6a0572, #1982c4, #ff1654, #00b159);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+      }
+      50% {
+        background: linear-gradient(90deg, #00b159, #ff1654, #1982c4, #6a0572, #ff9f1c, #56cfe1, #ff4b5c);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+      }
+      100% {
+        background: linear-gradient(90deg, #1982c4, #00b159, #ff4b5c, #56cfe1, #ff1654, #ff9f1c, #6a0572);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+      }
+    }
+  </style>
+</head>
+<body>
+  
+</body>
+</html>
   <div class="note" id="timer-note">Time only 6:30 to 19:30</div>
 
   <div class="timer" id="row1">
